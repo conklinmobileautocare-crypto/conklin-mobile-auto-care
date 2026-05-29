@@ -12,243 +12,243 @@
 
 <style>
 
-    *{
+*{
 
-        margin:0;
+    margin:0;
 
-        padding:0;
+    padding:0;
 
-        box-sizing:border-box;
+    box-sizing:border-box;
 
-        font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
-    }
+}
 
-    body{
+body{
 
-        background:#0d0d0d;
+    background:white;
 
-        color:white;
+    color:#111;
 
-        line-height:1.6;
+    line-height:1.6;
 
-    }
+}
 
-    header{
+header{
 
-        background:linear-gradient(to right,#111,#1a1a1a);
+    background:white;
 
-        padding:40px 20px;
+    padding:50px 20px;
 
-        text-align:center;
+    text-align:center;
 
-        border-bottom:4px solid red;
+    border-bottom:4px solid red;
 
-    }
+}
 
-    header img{
+header img{
 
-        max-width:350px;
+    max-width:320px;
 
-        width:100%;
+    width:100%;
 
-        margin-bottom:20px;
+    margin-bottom:20px;
 
-    }
+}
+
+h1{
+
+    font-size:3rem;
+
+    color:#111;
+
+    margin-bottom:10px;
+
+}
+
+.slogan{
+
+    color:red;
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.phone-btn{
+
+    display:inline-block;
+
+    background:red;
+
+    color:white;
+
+    padding:15px 30px;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+.phone-btn:hover{
+
+    background:#cc0000;
+
+}
+
+.service-area{
+
+    margin-top:15px;
+
+    color:#555;
+
+}
+
+section{
+
+    padding:60px 20px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2.2rem;
+
+    color:red;
+
+    margin-bottom:40px;
+
+}
+
+.services{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.service-box{
+
+    background:#f5f5f5;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    transition:0.3s;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-5px);
+
+    border-color:red;
+
+}
+
+.service-box h3{
+
+    color:red;
+
+    margin-bottom:10px;
+
+}
+
+.pricing{
+
+    background:#f5f5f5;
+
+    padding:30px;
+
+    border-radius:12px;
+
+}
+
+.pricing ul{
+
+    list-style:none;
+
+}
+
+.pricing li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ddd;
+
+    font-size:1.1rem;
+
+}
+
+.about{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:1.1rem;
+
+}
+
+footer{
+
+    background:#f5f5f5;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    border-top:4px solid red;
+
+}
+
+.contact{
+
+    font-size:1.2rem;
+
+    margin:10px 0;
+
+}
+
+@media(max-width:768px){
 
     h1{
 
-        font-size:3rem;
-
-        color:white;
-
-        margin-bottom:10px;
+        font-size:2rem;
 
     }
 
     .slogan{
 
-        color:#ff2b2b;
-
-        font-size:1.3rem;
-
-        margin-bottom:20px;
-
-        font-weight:bold;
+        font-size:1rem;
 
     }
 
-    .phone-btn{
-
-        display:inline-block;
-
-        background:red;
-
-        color:white;
-
-        padding:15px 30px;
-
-        text-decoration:none;
-
-        border-radius:8px;
-
-        font-size:1.2rem;
-
-        font-weight:bold;
-
-        transition:0.3s;
-
-    }
-
-    .phone-btn:hover{
-
-        background:#cc0000;
-
-    }
-
-    section{
-
-        padding:60px 20px;
-
-        max-width:1200px;
-
-        margin:auto;
-
-    }
-
-    .section-title{
-
-        text-align:center;
-
-        color:red;
-
-        margin-bottom:40px;
-
-        font-size:2.2rem;
-
-    }
-
-    .services{
-
-        display:grid;
-
-        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-        gap:25px;
-
-    }
-
-    .service-box{
-
-        background:#1a1a1a;
-
-        padding:25px;
-
-        border-radius:12px;
-
-        border:1px solid #333;
-
-        transition:0.3s;
-
-    }
-
-    .service-box:hover{
-
-        transform:translateY(-5px);
-
-        border-color:red;
-
-    }
-
-    .service-box h3{
-
-        color:red;
-
-        margin-bottom:10px;
-
-    }
-
-    .pricing{
-
-        background:#141414;
-
-        border-radius:12px;
-
-        padding:30px;
-
-    }
-
-    .pricing ul{
-
-        list-style:none;
-
-    }
-
-    .pricing li{
-
-        padding:12px 0;
-
-        border-bottom:1px solid #333;
-
-        font-size:1.1rem;
-
-    }
-
-    .about{
-
-        text-align:center;
-
-        font-size:1.1rem;
-
-        max-width:800px;
-
-        margin:auto;
-
-    }
-
-    footer{
-
-        background:#111;
-
-        text-align:center;
-
-        padding:30px 20px;
-
-        border-top:4px solid red;
-
-    }
-
-    .contact{
-
-        font-size:1.3rem;
-
-        margin:10px 0;
-
-    }
-
-    .service-area{
-
-        color:#ccc;
-
-        margin-top:10px;
-
-    }
-
-    @media(max-width:768px){
-
-        h1{
-
-            font-size:2rem;
-
-        }
-
-        .slogan{
-
-            font-size:1rem;
-
-        }
-
-    }
+}
 
 </style>
 
@@ -258,7 +258,7 @@
 
 <header>
 
-    <!-- Replace logo.png with your logo file name -->
+    <!-- Upload your logo image and rename it logo.png -->
 
     <img src="logo.png" alt="Conklin Mobile Auto Care Logo">
 
@@ -294,7 +294,7 @@
 
             <h3>Oil Changes</h3>
 
-            <p>Conventional, blend, and full synthetic oil changes at your home or workplace.</p>
+            <p>Conventional, blend, and full synthetic oil changes done at your home or workplace.</p>
 
         </div>
 
@@ -302,7 +302,7 @@
 
             <h3>Brake Pads & Rotors</h3>
 
-            <p>Reliable brake service and replacement done wherever you are.</p>
+            <p>Reliable brake repair and replacement service wherever you are.</p>
 
         </div>
 
@@ -310,7 +310,7 @@
 
             <h3>Battery Replacement</h3>
 
-            <p>Fast battery replacement and installation service.</p>
+            <p>Fast battery installation and replacement service.</p>
 
         </div>
 
@@ -318,7 +318,7 @@
 
             <h3>Air & Cabin Filters</h3>
 
-            <p>Improve airflow and interior air quality with quick filter replacements.</p>
+            <p>Improve vehicle airflow and cabin air quality with fresh filters.</p>
 
         </div>
 
@@ -326,7 +326,7 @@
 
             <h3>Wiper Blades</h3>
 
-            <p>Stay safe in bad weather with fresh wiper blade installation.</p>
+            <p>Quick replacement for safer driving in rain and snow.</p>
 
         </div>
 
@@ -334,7 +334,7 @@
 
             <h3>Tire Rotations</h3>
 
-            <p>Extend tire life and improve vehicle performance.</p>
+            <p>Help extend tire life and improve handling.</p>
 
         </div>
 
@@ -342,7 +342,7 @@
 
             <h3>Diagnostics</h3>
 
-            <p>Basic scanner checks and code reading for warning lights and issues.</p>
+            <p>Basic scanner checks and engine light diagnostics.</p>
 
         </div>
 
@@ -386,11 +386,17 @@
 
         <p>
 
-            Conklin Mobile Auto Care brings professional vehicle maintenance directly
+            Conklin Mobile Auto Care brings professional automotive maintenance
 
-            to your home, workplace, or roadside location. No waiting rooms, no towing,
+            directly to your home, workplace, or roadside location.
 
-            and no wasting your day at a repair shop.
+        </p>
+
+        <br>
+
+        <p>
+
+            No waiting rooms. No towing. No wasting your day at a repair shop.
 
         </p>
 
