@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Conklin Mobile Auto Care</title>
+
+<style>
+
+    *{
+
+        margin:0;
+
+        padding:0;
+
+        box-sizing:border-box;
+
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+
+    body{
+
+        background:#0d0d0d;
+
+        color:white;
+
+        line-height:1.6;
+
+    }
+
+    header{
+
+        background:linear-gradient(to right,#111,#1a1a1a);
+
+        padding:40px 20px;
+
+        text-align:center;
+
+        border-bottom:4px solid red;
+
+    }
+
+    header img{
+
+        max-width:350px;
+
+        width:100%;
+
+        margin-bottom:20px;
+
+    }
+
+    h1{
+
+        font-size:3rem;
+
+        color:white;
+
+        margin-bottom:10px;
+
+    }
+
+    .slogan{
+
+        color:#ff2b2b;
+
+        font-size:1.3rem;
+
+        margin-bottom:20px;
+
+        font-weight:bold;
+
+    }
+
+    .phone-btn{
+
+        display:inline-block;
+
+        background:red;
+
+        color:white;
+
+        padding:15px 30px;
+
+        text-decoration:none;
+
+        border-radius:8px;
+
+        font-size:1.2rem;
+
+        font-weight:bold;
+
+        transition:0.3s;
+
+    }
+
+    .phone-btn:hover{
+
+        background:#cc0000;
+
+    }
+
+    section{
+
+        padding:60px 20px;
+
+        max-width:1200px;
+
+        margin:auto;
+
+    }
+
+    .section-title{
+
+        text-align:center;
+
+        color:red;
+
+        margin-bottom:40px;
+
+        font-size:2.2rem;
+
+    }
+
+    .services{
+
+        display:grid;
+
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+        gap:25px;
+
+    }
+
+    .service-box{
+
+        background:#1a1a1a;
+
+        padding:25px;
+
+        border-radius:12px;
+
+        border:1px solid #333;
+
+        transition:0.3s;
+
+    }
+
+    .service-box:hover{
+
+        transform:translateY(-5px);
+
+        border-color:red;
+
+    }
+
+    .service-box h3{
+
+        color:red;
+
+        margin-bottom:10px;
+
+    }
+
+    .pricing{
+
+        background:#141414;
+
+        border-radius:12px;
+
+        padding:30px;
+
+    }
+
+    .pricing ul{
+
+        list-style:none;
+
+    }
+
+    .pricing li{
+
+        padding:12px 0;
+
+        border-bottom:1px solid #333;
+
+        font-size:1.1rem;
+
+    }
+
+    .about{
+
+        text-align:center;
+
+        font-size:1.1rem;
+
+        max-width:800px;
+
+        margin:auto;
+
+    }
+
+    footer{
+
+        background:#111;
+
+        text-align:center;
+
+        padding:30px 20px;
+
+        border-top:4px solid red;
+
+    }
+
+    .contact{
+
+        font-size:1.3rem;
+
+        margin:10px 0;
+
+    }
+
+    .service-area{
+
+        color:#ccc;
+
+        margin-top:10px;
+
+    }
+
+    @media(max-width:768px){
+
+        h1{
+
+            font-size:2rem;
+
+        }
+
+        .slogan{
+
+            font-size:1rem;
+
+        }
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- Replace logo.png with your logo file name -->
+
+    <img src="logo.png" alt="Conklin Mobile Auto Care Logo">
+
+    <h1>Conklin Mobile Auto Care</h1>
+
+    <div class="slogan">
+
+        Quality Auto Care, Delivered Anywhere
+
+    </div>
+
+    <a class="phone-btn" href="tel:17177531553">
+
+        Call or Text: 717-753-1553
+
+    </a>
+
+    <div class="service-area">
+
+        Serving Cumberland County, Pennsylvania
+
+    </div>
+
+</header>
+
+<section>
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-box">
+
+            <h3>Oil Changes</h3>
+
+            <p>Conventional, blend, and full synthetic oil changes at your home or workplace.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Brake Pads & Rotors</h3>
+
+            <p>Reliable brake service and replacement done wherever you are.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Battery Replacement</h3>
+
+            <p>Fast battery replacement and installation service.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Air & Cabin Filters</h3>
+
+            <p>Improve airflow and interior air quality with quick filter replacements.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Wiper Blades</h3>
+
+            <p>Stay safe in bad weather with fresh wiper blade installation.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Tire Rotations</h3>
+
+            <p>Extend tire life and improve vehicle performance.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <h3>Diagnostics</h3>
+
+            <p>Basic scanner checks and code reading for warning lights and issues.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Pricing</h2>
+
+    <div class="pricing">
+
+        <ul>
+
+            <li>Oil Changes — Starting at $69.99</li>
+
+            <li>Brake Pads & Rotors — Starting at $349</li>
+
+            <li>Battery Replacement — Starting at $49 Labor</li>
+
+            <li>Air & Cabin Filters — $25-$75 Installed</li>
+
+            <li>Wiper Blades — $25-$50 Installed</li>
+
+            <li>Tire Rotations — $39.99</li>
+
+            <li>Basic Diagnostics — $49</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="about">
+
+        <p>
+
+            Conklin Mobile Auto Care brings professional vehicle maintenance directly
+
+            to your home, workplace, or roadside location. No waiting rooms, no towing,
+
+            and no wasting your day at a repair shop.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Honest pricing, dependable service, and convenient mobile auto care
+
+            throughout Cumberland County.
+
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+
+        📞 717-753-1553
+
+    </div>
+
+    <div class="contact">
+
+        Cumberland County, PA
+
+    </div>
+
+    <br>
+
+    <a class="phone-btn" href="tel:17177531553">
+
+        Call Now
+
+    </a>
+
+</footer>
+
+</body>
+
+</html>
